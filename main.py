@@ -12,4 +12,4 @@ app = FastAPI()
 @app.get("/")
 def inicio():
     print(os.getenv('API_KEY'))
-    return {"message": "Esta es una Api para realizar consultas a OpenAI"}
+    return {"message": "Esta es una Api para realizar consultas a OpenAI","apiii":os.getenv('API_KEY')}
